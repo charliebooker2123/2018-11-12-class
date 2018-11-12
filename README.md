@@ -13,3 +13,7 @@ and returns
 # Question 2
 
 modify function so it just doesn't return name of the file but the entire pack
+
+# Question 3
+
+Return information in the file as a tibble, not just the link

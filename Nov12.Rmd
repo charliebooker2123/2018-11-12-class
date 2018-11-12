@@ -22,8 +22,9 @@ build_file <- function(x) {
 
 ```{r}
 #modifying build function to return the file and not just the name
-build_link <- function(x) {
-  paste("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", x, ".csv", sep = "")
+#district and wave are two arguments
+build_link <- function(district, wave) {
+  paste("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", district, "-", wave, ".csv", sep = "")
 }
 ```
 
