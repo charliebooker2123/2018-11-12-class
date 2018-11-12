@@ -11,9 +11,19 @@ library(tidyverse)
 #tidyverse includes dplyr
 ```
 
+
 ```{r}
+#build file. 1st function
 build_file <- function(x) {
   paste("elections-poll-", x, ".csv", sep = "")
+}
+```
+
+
+```{r}
+#modifying build function to return the file and not just the name
+build_link <- function(x) {
+  paste("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", x, ".csv", sep = "")
 }
 ```
 
