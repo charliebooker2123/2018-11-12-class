@@ -1,0 +1,17 @@
+---
+title: "Class  November 12, 2018"
+author: "Charlie Booker"
+date: "November 12, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+up_function <- function(argument) {
+  
+}
+```
+
