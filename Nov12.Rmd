@@ -11,7 +11,7 @@ library(tidyverse)
 #tidyverse includes dplyr
 ```
 
-
+# Question 1
 ```{r}
 #build file. 1st function
 build_file <- function(x) {
@@ -19,12 +19,20 @@ build_file <- function(x) {
 }
 ```
 
-
+# Question 2
 ```{r}
 #modifying build function to return the file and not just the name
 #district and wave are two arguments
 build_link <- function(district, wave) {
   paste("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", district, "-", wave, ".csv", sep = "")
+}
+```
+
+# Question 3
+
+```{r}
+build_file <- function(district, wave) {
+  download.file("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", district, "-", wave, ".csv", sep = "")
 }
 ```
 
