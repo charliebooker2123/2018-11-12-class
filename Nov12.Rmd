@@ -9,6 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 #tidyverse includes dplyr
+library(readr)
 ```
 
 # Question 1
@@ -31,8 +32,14 @@ build_link <- function(district, wave) {
 # Question 3
 
 ```{r}
-build_file <- function(district, wave) {
-  download.file("https://github.com/TheUpshot/2018-live-poll-results/blob/master/data/elections-poll-", district, "-", wave, ".csv", sep = "")
+download_link <- function(district, wave) {
+ x <- paste("https://raw.githubusercontent.com/TheUpshot/2018-live-poll-results/master/data/elections-poll-", district, "-", wave, ".csv", sep = "")
+ 
+ y <- read_csv(x)
+ 
+ invisible(y)
 }
+
+
 ```
 
