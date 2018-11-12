@@ -7,11 +7,13 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+#tidyverse includes dplyr
 ```
 
 ```{r}
-up_function <- function(argument) {
-  
+build_file <- function(x) {
+  paste("elections-poll-", x, ".csv", sep = "")
 }
 ```
 
