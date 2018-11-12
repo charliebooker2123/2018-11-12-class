@@ -1,1 +1,1 @@
-# 2018-11-12-class
+Class today November 12 and some notes
